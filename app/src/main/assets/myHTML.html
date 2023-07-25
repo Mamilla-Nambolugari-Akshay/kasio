@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="myCSS.css">
+<script src="myJS.js"></script>
+<body>
+<button class="aa" onclick="openPage('Home', this, 'Salmon')" id="defaultOpen" >ARITHMETIC</button>
+<button class="aa" onclick="openPage('Entertain', this, 'LimeGreen')" >LOG</button>
+<button class="aa" onclick="openPage('Program', this, 'LightGreen')" > BITWISE </button>
+<button class="aa" onclick="openPage('Sport', this, 'orange')" >MATH</button>
+<div id="Home" class="myapp">
+    <textarea rows="10" id="res"></textarea>
+    <table border="7" >
+        <tr>
+            <th align="center" colspan=2  ><button onclick="ac1()" class="bn"> <b> AC </b> </button> </th>
+            <td colspan=2 align="center"> <button onclick="cal1()" class="bn" > <b>&#65309;</b>  </button> </td>
+        </tr>
+        <tr>
+            <td align="center" > <button onclick="show1('1')"> <b> 1</b> </button> </td>
+            <td align="center"> <button onclick="show1('2')"> <b>2</b> </button> </td>
+            <td align="center"><button onclick="show1('3')"> <b>3</b> </button> </td>
+            <td align="center" ><button onclick="del1()" class="bn"> <b>DEL</b> </button> </td>
+        </tr>
+        <tr>
+            <td align="center"><button onclick="show1('4')"> <b>4</b> </button> </td>
+            <td align="center"><button onclick="show1('5')">  <b>5</b> </button> </td>
+            <td align="center"><button onclick="show1('6')"> <b>6</b> </button> </td>
+            <td align="center"><button onclick="show1('+')" class="but"> <b>+</b> </button> </td>
+        </tr>
+        <tr>
+            <td align="center"><button onclick="show1('7')"> <b>7</b> </button> </td>
+            <td align="center"><button onclick="show1('8')"> <b>8</b> </button> </td>
+            <td align="center"><button onclick="show1('9')"> <b>9</b> </button> </td>
+            <td align="center"><button onclick="show1('-')" class="but"> <b>-</b> </button> </td>
+        </tr>
+        <tr>
+            <td align="center"><button onclick="show1('0')"> <b>0</b> </button> </td>
+            <td align="center"><button onclick="show1('/')" class="but"> <b>/</b> </button> </td>
+            <td align="center"><button onclick="show1('00')" > <b>00</b> </button> </td>
+            <td align="center"><button onclick="show1('*')" class="but"> <b>x</b> </button> </td>
+
+        </tr>
+        <tr>
+            <td align="center"><button onclick="show1('(')"> <b>(</b> </button> </td>
+            <td align="center"><button onclick="show1(')')"> <b>)</b> </button> </td>
+            <td align="center"><button onclick="show1('.')"> <b>.</b> </button> </td>
+            <td align="center"><button onclick="show1('%')" class="but"> <b>MOD</b> </button> </td>
+        </tr>
+    </table>
+</div>
+<div id="Entertain" class="myapp">
+    <textarea rows="5" id="res1"></textarea>
+    <table border="10" >
+        <tr>
+            <th align="center" colspan=2  ><button onclick="ac()" class="btn1"> <b> AC </b> </button> </th>
+            <td colspan=2 align="center"> <button onclick="cal()" class="btn1" > <b>&#xFF1D;</b>  </button> </td>
+        </tr>
+        <tr>
+            <td align="center" > <button onclick="show('1')" class="log"> <b> 1</b> </button> </td>
+            <td align="center"> <button onclick="show('2')" class="log"> <b>2</b> </button> </td>
+            <td align="center"><button onclick="show('3')" class="log"> <b>3</b> </button> </td>
+            <td align="center"><button onclick="del5()" class="btn1"> <b>DEL</b> </button> </td>
+        </tr>
+        <tr>
+            <td align="center"><button onclick="show('4')" class="log"> <b>4</b> </button> </td>
+            <td align="center"><button onclick="show('5')" class="log">  <b>5</b> </button> </td>
+            <td align="center"><button onclick="show('6')" class="log"> <b>6</b> </button> </td>
+            <td align="center"><button onclick="show('+')" class="but1"> <b>+</b> </button> </td>
+        </tr>
+        <tr>
+            <td align="center"><button onclick="show('7')" class="log"> <b>7</b> </button> </td>
+            <td align="center"><button onclick="show('8')" class="log"> <b>8</b> </button> </td>
+            <td align="center"><button onclick="show('9')" class="log"> <b>9</b> </button> </td>
+            <td align="center"><button onclick="show('-')" class="but1"> <b>-</b> </button> </td>
+        <tr>
+            <td align="center"><button onclick="show('0')" class="log"> <b>0</b> </button> </td>
+            <td align="center"><button onclick="show('/')" class="but1"> <b>/</b> </button> </td>
+            <td align="center"><button onclick="show('00')" class="log"> <b>00</b> </button> </td>
+            <td align="center"><button onclick="show('*')" class="but1"> <b>X</b> </button> </td>
+
+        </tr>
+        <tr>
+            <td align="center"><button onclick="show('(')" class="log"> <b>(</b> </button> </td>
+            <td align="center"><button onclick="show(')')" class="log"> <b>)</b> </button> </td>
+            <td align="center"><button onclick="show('.')" class="log"> <b>.</b> </button> </td>
+            <td align="center"><button onclick="show(',')" class="log"> <b>,</b> </button> </td>
+
+        </tr>
+        <tr>
+            <td align="center"><button onclick="show('Math.sin(')" class="bt"> <b>SIN</b> </button> </td>
+            <td align="center"><button onclick="show('Math.cos(')" class="bt"> <b>COS</b> </button> </td>
+            <td align="center"><button onclick="show('Math.tan(')" class="bt"> <b>TAN</b> </button> </td>
+            <td align="center"><button onclick="sih()" class="bt"> <b>SINH</b> </button> </td>
+
+        </tr>
+        <tr>
+            <td align="center"><button onclick="cosh()" class="bt"> <b>COSH</b> </button> </td>
+            <td  align="center"> <button onclick="tah()" class="bt"> <b>tanh</b> </button> </td>
+            <td align="center"><button onclick="show('Math.asinh(')" class="bt"> <b>asinh</b> </button></td>
+            <td align="center"><button onclick="show('Math.acosh(')" class="bt"> <b>acosh</b> </button> </td>
+
+        </tr>
+        <tr>
+            <td align="center"><button onclick="show('Math.atanh(')" class="bt"> <b>atanh</b> </button> </td>
+            <td align="center"><button onclick="show('Math.asin(')" class="bt"> <b> asin </b> </button></td>
+            <td align="center"><button onclick="show('Math.acos(')" class="bt"> <b>acos</b> </button> </td>
+            <td align="center"><button onclick="show('Math.atan(')" class="bt"> <b>atan</b> </button> </td>
+        </tr>
+
+        <tr>
+            <td align="center"><button onclick="show('Math.atan2(')" class="bt"> <b>atan2</b> </button> </td>
+            <td align="center"><button onclick="show('Math.PI')" class="bt"> <b> pi </b> </button> </td>
+            <td align="center"><button onclick="show('**')" class="bt"> <b>POW</b> </button> </td>
+            <td align="center"><button onclick="cb()" class="bt"> <b> cbrt </b> </button> </td>
+        </tr>
+
+        <tr>
+            <td align="center"><button onclick="show('Math.sqrt(')" class="bt"> <b>&#8730;</b> </button> </td>
+            <td align="center"><button onclick="show('Math.E')" class="bt"> <b>E</b> </button> </td>
+            <td  align="center"> <button onclick="log()" class="bt"> <b>LOG</b>  </button> </td>
+            <td align="center"><button onclick="log2()" class="bt"> <b>LOG2</b> </button> </td>
+
+        </tr>
+        <tr>
+            <td align="center"><button onclick="log10()" class="bt"> <b>LOG10</b> </button> </td>
+            <td align="center"><button onclick="show('Math.LN2')" class="bt"> <b>LN2</b> </button> </td>
+            <td align="center"><button onclick="show('Math.LN10')" class="bt"> <b>LN10</b> </button> </td>
+            <td align="center"><button onclick="show('Math.LOG2E')" class="bt"> <b>LOG2E</b> </button> </td>
+
+        </tr>
+        <tr>
+            <td align="center"><button onclick="show('Math.LOG10E')" class="bt"> <b>LOG10E</b> </button> </td>
+            <td align="center"><button onclick="show('Math.log10(')" class="bt"> <b>log10</b> </button> </td>
+            <td align="center"><button onclick="show('Math.log1p(')" class="bt"> <b>log1p</b> </button> </td>
+            <td align="center"><button onclick="show('Math.SQRT2')" class="bt"> <b> SQRT2 </b> </button> </td>
+
+        </tr>
+
+
+    </table>
+
+</div>
+<div id="Program" class="myapp">
+    <textarea rows="5" id="res2"></textarea>
+    <table border="10" >
+        <tr>
+            <th align="center" colspan=2  ><button onclick="ac2()" class="btn"> <b> AC </b> </button> </th>
+            <td colspan=2 align="center"> <button onclick="cal2()" class="btn" > <b>=</b>  </button> </td>
+        </tr>
+        <tr>
+            <td align="center" > <button onclick="show2('1')"> <b> 1</b> </button> </td>
+            <td align="center"> <button onclick="show2('2')" name="2"> <b>2</b> </button> </td>
+            <td align="center"><button onclick="show2('3')"> <b>3</b> </button> </td>
+            <td align="center" id="b1" ><button onclick="del2()" class="btn"> <b>DEL</b> </button> </td>
+        </tr>
+        <tr>
+            <td align="center"><button onclick="show2('4')"> <b>4</b> </button> </td>
+            <td align="center"><button onclick="show2('5')">  <b>5</b> </button> </td>
+            <td align="center"><button onclick="show2('6')"> <b>6</b> </button> </td>
+            <td align="center"><button onclick="show2('+')" class="but2"> <b>+</b> </button> </td>
+        </tr>
+
+        <tr>
+            <td align="center"><button onclick="show2('7')"> <b>7</b> </button> </td>
+            <td align="center"><button onclick="show2('8')"> <b>8</b> </button> </td>
+            <td align="center"><button onclick="show2('9')"> <b>9</b> </button> </td>
+            <td align="center"><button onclick="show2('-')" class="but2"> <b>-</b> </button> </td>
+        </tr>
+        <tr>
+            <td align="center"><button onclick="show2('0')"> <b>0</b> </button> </td>
+            <td align="center"><button onclick="show2('/')" class="but2"> <b>/</b> </button> </td>
+            <td align="center"><button onclick="show2('.')" > <b>.</b> </button> </td>
+            <td align="center"><button onclick="show2('*')" class="but2"> <b>X</b> </button> </td>
+        </tr>
+        <tr>
+            <td align="center"><button onclick="show2('(')"> <b>(</b> </button> </td>
+            <td align="center"><button onclick="show2('&')" class="bot"> <b>&</b> </button> </td>
+            <td align="center"><button onclick="show2(')')"> <b>)</b> </button> </td>
+            <td align="center"><button onclick="show2('|')" class="bot"> <b>|</b> </button> </td>
+        </tr>
+        <tr>
+            <td align="center"><button onclick="show2('~')" class="bot"> <b>~</b> </button> </td>
+            <td align="center"><button onclick="show2('^')" class="bot"> <b>^</b> </button> </td>
+            <td align="center"><button onclick="show2('>>')" class="bot"> <b>>></b> </button> </td>
+            <td align="center"><button onclick="show2('<<')" class="bot"> <b> << </b> </button> </td>
+        </tr>
+    </table>
+</div>
+
+<div id="Sport" class="myapp">
+    <textarea rows="7" id="res3"></textarea>
+    <table border="1" >
+        <tr>
+            <th align="center" colspan=2  ><button onclick="ac3()" class="btn1"> <b> AC </b> </button> </th>
+            <td colspan=2 align="center"> <button onclick="cal3()" class="btn1" > <b>=</b>  </button> </td>
+
+        </tr>
+        <tr>
+            <td align="center" > <button onclick="show3('1')" class="log"> <b> 1</b> </button> </td>
+            <td align="center"> <button onclick="show3('2')" class="log"> <b>2</b> </button> </td>
+            <td align="center"><button onclick="show3('3')" class="log"> <b>3</b> </button> </td>
+            <td align="center" ><button onclick="del3()" class="btn1"> <b>DEL</b> </button> </td>
+        </tr>
+        <tr>
+            <td align="center"><button onclick="show3('4')" class="log"> <b>4</b> </button> </td>
+            <td align="center"><button onclick="show3('5')" class="log">  <b>5</b> </button> </td>
+            <td align="center"><button onclick="show3('6')" class="log"> <b>6</b> </button> </td>
+            <td align="center"><button onclick="show3('+')" class="but3"> <b>+</b> </button> </td>
+        </tr>
+        <tr>
+            <td align="center"><button onclick="show3('7')" class="log"> <b>7</b> </button> </td>
+            <td align="center"><button onclick="show3('8')" class="log"> <b>8</b> </button> </td>
+            <td align="center"><button onclick="show3('9')" class="log"> <b>9</b> </button> </td>
+            <td align="center"><button onclick="show3('-')" class="but3"> <b>-</b> </button> </td>
+        <tr>
+            <td align="center"><button onclick="show3('0')" class="log"> <b>0</b> </button> </td>
+            <td align="center"><button onclick="show3('/')" class="but3"> <b>/</b> </button> </td>
+            <td align="center"><button onclick="show3('00')" class="log"> <b>00</b> </button> </td>
+            <td align="center"><button onclick="show3('*')" class="but3"> <b>X</b> </button> </td>
+        </tr>
+        <tr>
+            <td align="center"><button onclick="show3('(')" class="log"> <b>(</b> </button> </td>
+            <td align="center"><button onclick="show3(')')" class="log"> <b>)</b> </button> </td>
+            <td align="center"><button onclick="show3('.')" class="log"> <b>.</b> </button> </td>
+            <td align="center"><button onclick="sign()" class="bat"> <b>SIGN</b> </button> </td>
+        </tr>
+        <tr>
+            <td align="center"><button onclick="abs()" class="bat"> <b> abs </b> </button> </td>
+            <td align="center"><button onclick="round()" class="bat"> <b>ROUND</b> </button> </td>
+            <td align="center"><button onclick="ceil()" class="bat"> <b> ceil </b> </button> </td>
+            <td align="center"><button onclick="floor()" class="bat"> <b> floor </b> </button> </td>
+        </tr>
+
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,204 @@
+* {box-sizing: border-box}
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 65%;
+  padding: 4px;
+}
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 2px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.color{background-color:yellow;
+   padding: 2px;
+  text-decoration: none;
+  color: black;
+  display: block;
+font-size:20px}
+.bn{background-color:DodgerBlue}
+.btn{background-color:BurlyWood}
+.but{background-color: #F5DF4D }
+#res {
+  text-align: right;
+}
+#b{background-color:none;
+           color:red}
+#bg{background-color:white;
+     width:100%;
+     height:100%
+
+    }
+ textarea{width:100%;
+   float: left;
+   padding: 0;
+   border: none;
+   background: none;
+   color: gray;
+   text-align: right;
+   font-weight: 400;
+   font-size: 30px;
+   line-height: 30px;
+   margin:none;}
+
+.bt{background-color:PaleGreen}
+
+body{ background-color:white;
+        width:100%}
+h1{font-size:20px;text-align:center}
+table{background-color:GoldenRod;
+      border-color:red;
+      width:100%
+     }
+button{background-color:HotPink;
+      border-color:green;
+      text-align:center;
+         width:100%;
+          height:50px}
+tr{background-color: white;
+ border:grid}
+
+.demo{ width:100%;
+  height: 60px;
+  float: left;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  background: none;
+  color: gray;
+  text-align: right;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  margin:none;
+  }
+   html {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+
+    font-family: 'Cookie', cursive;
+  }
+
+ #myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    display: block;
+     background-color:black
+  }
+
+  #myMenu li a:hover {
+    background-color: #eee;
+  }
+  }
+
+  #my li  {
+      padding: 12px;
+      text-decoration: none;
+      color: black;
+      display: block
+    }
+
+    #my li:active{
+     background-color: #eee;
+    }
+
+  /* Set height of body and the document to 100% */
+  body,html {
+    height: 100%;
+    margin: 0%;
+    font-family:  Spicy Rice;
+     background-color:none
+  }
+
+  /* Style tab links */
+  .aa{
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+
+
+  /* Style the tab content */
+  .myapp {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }
+table{width:100%;
+}
+.btn1{background-color:Orchid}/*(13415)	w3-highway- school bus*/
+.log{background-color:#55ACEE }/*twitter*/
+table
+  {
+    border: 2px solid #774F38;
+    border-collapse: collapse;
+  }
+  td,th
+  {
+    padding: 5px 10px;
+  }
+  thead
+  {
+    background-color: #F1D4AF;
+  }
+  tfoot
+  {
+    background-color: #C5E0DC;
+  }
+
+  table.fixed-table
+  {
+    width:90%;
+    table-layout:fixed;
+  }
+
+  table.fixed-table td
+  {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /*set the width you want for each td */
+
+  table.fixed-table th:nth-child(2),
+  table.fixed-table th:nth-child(3)
+  {
+    width:40%;
+  }
+.but2{background-color:DeepSkyBlue}
+.bot{background-color:LightSeaGreen}
+.bat{background-color:MediumSpringGreen}
